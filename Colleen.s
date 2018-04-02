@@ -1,6 +1,6 @@
 section .data
-    fmt db '%s', 10
-    msg db 'section .data'
+    fmt db '%s', 10, 0
+    msg db 'section .data', 10, 0
 
 section .text
     global start
@@ -11,11 +11,7 @@ start:
     call _main
 
 _main:
-    mov rax, offset data
-    push rax
-    mov rax, offset data
-    push rax
+    lea rdi, [rel msg]
     call _printf
-    pop rbx
-    pop rbx
+
     ret
