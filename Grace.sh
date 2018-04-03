@@ -1,14 +1,9 @@
 #!/bin/sh
 
-ft_function() {}
-
 main()
 {
-#Fonction sans interret
-ft_function
-
-b=\' c=\\ a='/bin/echo "#!/bin/sh" ; /bin/echo ; /bin/echo "ft_function() {}" ; /bin/echo ; /bin/echo "main()" ; /bin/echo "{" ; /bin/echo "#Fonction sans interret" ; /bin/echo "ft_function" ; /bin/echo ; /bin/echo b=$c$b c=$c$c a=$b$a$b; /bin/echo $a ; /bin/echo "}" ; /bin/echo ; /bin/echo "main"'
-/bin/echo "#!/bin/sh" ; /bin/echo ; /bin/echo "ft_function() {}" ; /bin/echo ; /bin/echo "main()" ; /bin/echo "{" ; /bin/echo "#Fonction sans interret" ; /bin/echo "ft_function" ; /bin/echo ; /bin/echo b=$c$b c=$c$c a=$b$a$b; /bin/echo $a ; /bin/echo "}" ; /bin/echo ; /bin/echo "main"
+b=\' c=\\ a='/bin/echo "#!/bin/sh" > "Grace_kid.sh" ; /bin/echo >> "Grace_kid.sh" ; /bin/echo "main()" >> "Grace_kid.sh" ; /bin/echo "{" >> "Grace_kid.sh" ; /bin/echo b=$c$b c=$c$c a=$b$a$b >> "Grace_kid.sh" ; /bin/echo $a >> "Grace_kid.sh" ; /bin/echo "}" >> "Grace_kid.sh" ; /bin/echo >> "Grace_kid.sh" ; /bin/echo "main" >> "Grace_kid.sh"'
+/bin/echo "#!/bin/sh" > "Grace_kid.sh" ; /bin/echo >> "Grace_kid.sh" ; /bin/echo "main()" >> "Grace_kid.sh" ; /bin/echo "{" >> "Grace_kid.sh" ; /bin/echo b=$c$b c=$c$c a=$b$a$b >> "Grace_kid.sh" ; /bin/echo $a >> "Grace_kid.sh" ; /bin/echo "}" >> "Grace_kid.sh" ; /bin/echo >> "Grace_kid.sh" ; /bin/echo "main" >> "Grace_kid.sh"
 }
 
 main
